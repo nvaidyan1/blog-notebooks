@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latent Dynamics</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #f5f2ed;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Iowan Old Style", "Apple Garamond", "Palatino Linotype", Georgia, serif;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+      max-width: 680px;
+      padding: 2rem;
+      opacity: 0;
+      transform: translateY(12px);
+      animation: fadeUp 0.7s ease forwards 0.1s;
+    }
+
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-logo img {
+      width: 90px;
+      height: auto;
+      display: block;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .hero-content {
+      border-left: 1px solid #d8d3cc;
+      padding-left: 2rem;
+    }
+
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+      margin: 0 0 1.2rem 0;
+      color: #1a1a1a;
+    }
+
+    .hero-description {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #666;
+      line-height: 1.65;
+      margin: 0 0 1.4rem 0;
+    }
+
+    .coming-soon {
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #9c8e82;
+      font-family: "Georgia", serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-logo">
+      <img src="latent-dynamics-logo.png">
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">Latent Dynamics</h1>
+      <p class="hero-description">
+        Brains, machines, and equations have been circling the same questions about
+        intelligence for decades. Notes from someone thoroughly amused by how often
+        they agree.
+      </p>
+      <span class="coming-soon">Blog coming soon</span>
+    </div>
+  </div>
+</body>
+</html>
